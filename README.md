@@ -41,7 +41,7 @@ Step 4 Run docker container
     docker run -dti (--restart unless-stopped) --name=web1 -v /s3/:/usr/local/apache2/htdocs/ -p 8080:80 httpd:2.4 (or other image)
 
 
-###############################################################################################
+######################################################################################
 
 2) USE EFS as storage layer and persistent volume for Docker Container
 
@@ -54,7 +54,8 @@ Step 1 Installation:
         sudo yum install -y nfs-utils
 
 Step 2 Mount
-    udo mount -t efs (EFS_FileSystem_ID):/  /mnt/nfs
+
+    sudo mount -t efs (EFS_FileSystem_ID):/  /mnt/nfs
 
 Step 3 Run docker container
 
