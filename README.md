@@ -34,7 +34,7 @@ Step 2  Configuration
 
 Step 3  Mount
 
-    s3fs mybucket /path/to/mountpoint   (-o passwd_file=${HOME}/.passwd-s3fs)   #without -o it will use /etc/passwd-s3fs  file
+    s3fs mybucket /path/to/mountpoint   (-o passwd_file=${HOME}/.passwd-s3fs) (-o allow_other for on prem)   #without -o it will use /etc/passwd-s3fs  file
 
 Step 4 Run docker container
 
